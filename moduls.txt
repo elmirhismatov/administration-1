@@ -1,2 +1,2 @@
-peeweee
+peewee
 pytest
