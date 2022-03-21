@@ -15,14 +15,14 @@ pipeline {
 
         stage("Start PyTest") {
             steps {
-                sh 'pytest administration-1/test.py --junitxml=administration-1/report/results.xml'
+                sh 'pytest test.py --junitxml=results.xml'
                 echo 'Pytest is ready'
             }
         }
 
         stage("app start...") {
             steps {
-                sh 'python3 administration-1/app.py start'
+                sh 'python3 app.py start'
                 echo 'Lab work done :) ...'
             }
         }
