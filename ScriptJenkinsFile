@@ -15,7 +15,7 @@ pipeline {
 
         stage("Start PyTest") {
             steps {
-                sh 'pytest administration-1/test.py --junitxml=Lab1/report/results.xml'
+                sh 'pytest administration-1/test.py --junitxml=administration-1/report/results.xml'
                 echo 'Pytest is ready'
             }
         }
