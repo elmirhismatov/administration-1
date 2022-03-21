@@ -23,7 +23,7 @@ pipeline {
         stage("app start...") {
             steps {
                 sh 'python3 app.py start'
-                echo 'Lab work done :) ...'
+                echo 'build administration-1 is right, great job'
             }
         }
     }
