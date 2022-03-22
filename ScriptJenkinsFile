@@ -20,30 +20,9 @@ pipeline {
             }
         }
 
-        stage("app init...") {
+        stage("app start...") {
             steps {
-                sh 'python3 app.py init'
-                echo 'build administration-1 is right, great job'
-            }
-        }
-        
-        stage("app fill...") {
-            steps {
-                sh 'python3 app.py fill'
-                echo 'build administration-1 is right, great job'
-            }
-        }
-        
-        stage("app show...") {
-            steps {
-                sh 'python3 app.py show Orders'
-                echo 'build administration-1 is right, great job'
-            }
-        }
-        
-        stage("app show...") {
-            steps {
-                sh 'python3 app.py show Clients'
+                sh 'python3 app.py start'
                 echo 'build administration-1 is right, great job'
             }
         }
